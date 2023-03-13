@@ -9,10 +9,23 @@
 <body>
     <h1>Formulario</h1>
     <form>
-        <input type="text" name="Nome" placeholder="Nome">
-        <input type="email" name="E-mail" id="" placeholder="Email">
+        <input required type="text" name="Nome" placeholder="Nome">
+        <input required type="email" name="E-mail" id="" placeholder="Email">
         <textarea name="Mensagem" placeholder="Sua mensagem"></textarea>
+        <select required name="cor">
+            <option>Selecione sua cor preferida</option>
+            <option>vermelho</option>
+            <option>azul</option>
+        </select>
+        <br>
+        <label>Enviar um imagem</label>
+        <input type="file">
+        <br>
+        <label>Voçê é maior de idade?</label>
+        <input required type="checkbox" name="yes">
         <input type="submit" value="send">
+        <label>Data de Nascimento</label>
+        <input required type="date">
      
     </form>
 </body>
